@@ -1,3 +1,4 @@
+@Library('easy-notes') _
 node(label: 'master') {
     //Variables
     def gitURL='https://github.com/narendrajava1/easy-notes.git'
@@ -9,6 +10,4 @@ node(label: 'master') {
     }
 }
 
-def gitClone(def url,def branch){
-    checkout([$class: 'GitSCM', branches: [[name: '${branch}']], doGenerateSubmoduleConfigurations: false, extensions: [], submoduleCfg: [], userRemoteConfigs: [[url: '${url}']]])
-}
+
