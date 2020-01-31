@@ -58,8 +58,13 @@
 			<artifactId>spring-boot-configuration-processor</artifactId>
 			<optional>true</optional>
 		</dependency>
+		<dependency>
+			<groupId>mysql</groupId>
+			<artifactId>mysql-connector-java</artifactId>
+			<scope>provided</scope>
+		</dependency>
 	</dependencies>
-	<profiles>
+<!-- 	<profiles>
 		<profile>
 			<id>dev</id>
 			<properties>
@@ -73,7 +78,7 @@
 				</dependency>
 			</dependencies>
 		</profile>
-		<profile>
+ 		<profile>
 			<id>qa</id>
 			<properties>
 				<activatedProperties>qa</activatedProperties>
@@ -85,8 +90,8 @@
 					<scope>runtime</scope>
 				</dependency>
 			</dependencies>
-		</profile>
-	</profiles>
+		</profile> 
+	</profiles> -->
 	<build>
 		<resources>
 			<resource>
