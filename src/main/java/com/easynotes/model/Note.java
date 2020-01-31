@@ -1,6 +1,4 @@
-/*
- *
- */
+
 package com.easynotes.model;
 import java.util.Date;
 
